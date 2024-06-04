@@ -1,0 +1,44 @@
+npm init  --> cria o package.json  para mudar as 
+cofiguração por exemplo o common.js para modules
+
+
+npm install express --> instala o express para usar rotas
+
+npm install routes --> adiciona a pasta de rotas caso não tenha em express
+
+npm install -g nodemon --> para dar refresh no servidor caso mudar o g siginifica global
+ele é instalado no node e não apenas no projeto
+
+npm i routes -> instala o routes 
+
+npm i mysql2 --save  -> instala o modulo de mysql2 que é mais moderno
+
+pode se usar o i ao inves de install
+
+npm i express-handlebars --save --> instalar o handlebars
+
+npm i express-session --save
+
+/**************************************************************************************************
+PROBLEMAS COM CORS
+
+npm install cors
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+app.use(cors());
+
+// Rotas e outras configurações do servidor
+
+const http = require('http');
+
+const servidor = http.createServer((req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Permitir solicitações de qualquer origem
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // Métodos permitidos
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Cabeçalhos permitidos
+  res.setHeader('Access-Control-Allow-Credentials', true); // Permitir credenciais
+
+  // Resto do código do servidor
+});
+/****************************************************************************************************

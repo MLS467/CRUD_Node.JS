@@ -1,0 +1,18 @@
+<div class="container">
+    <form action="/cad" method="post">
+        <div class="row mt-5 ">
+            <div class="col-4  ">
+                <label for="nome" class="">Nome</label>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Campo 1">
+            </div>
+            <div class="col-4">
+                <label for="email" class="">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Campo 2">
+            </div>
+            <div class="col-4 mt-4">
+                <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
+            </div>
+        </div>
+        {{>_msg}}
+    </form>
+</div>

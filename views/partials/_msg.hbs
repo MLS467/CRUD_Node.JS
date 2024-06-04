@@ -1,0 +1,11 @@
+{{#if sucesso}}
+<div class="alert alert-success mt-5" role="alert">
+    Dados inseridos com sucesso
+</div>
+{{/if}}
+
+{{#each erros }}
+<div class="alert alert-danger mt-5" role="alert">
+    {{mensagem}}
+</div>
+{{/each}}

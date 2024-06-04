@@ -1,0 +1,11 @@
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            {{!-- FAZENDO O {{#if}} ELE FICARÁ ATIVO APENAS NAQUELA ROTA PORQUE VAI SER TRUE --}}
+            <li class="nav-item"><a href="/" class="nav-link {{#if actCad }} active {{/if}}"
+                    aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/user" class="nav-link {{#if actUser }} active {{/if}}">Features</a></li>
+
+        </ul>
+    </header>
+</div>
